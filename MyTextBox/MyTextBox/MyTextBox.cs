@@ -24,5 +24,12 @@ namespace MyTextBox
         {
             this.BackColor = System.Drawing.Color.White;
         }
+        protected override void OnKeyUp(KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                SendKeys.Send("{TAB}");
+            }
+        }
     }
 }

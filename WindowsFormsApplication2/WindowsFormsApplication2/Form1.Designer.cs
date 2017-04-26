@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApplication1
+﻿namespace WindowsFormsApplication2
 {
     partial class Form1
     {
@@ -30,11 +30,12 @@
         {
             this.myTextBox1 = new MyTextBox.MyTextBox();
             this.myTextBox2 = new MyTextBox.MyTextBox();
+            this.myTextBox3 = new MyTextBox.MyTextBox();
             this.SuspendLayout();
             // 
             // myTextBox1
             // 
-            this.myTextBox1.Location = new System.Drawing.Point(43, 36);
+            this.myTextBox1.Location = new System.Drawing.Point(129, 55);
             this.myTextBox1.MenorValor = 0;
             this.myTextBox1.Name = "myTextBox1";
             this.myTextBox1.Size = new System.Drawing.Size(100, 22);
@@ -42,17 +43,26 @@
             // 
             // myTextBox2
             // 
-            this.myTextBox2.Location = new System.Drawing.Point(43, 108);
+            this.myTextBox2.Location = new System.Drawing.Point(129, 144);
             this.myTextBox2.MenorValor = 0;
             this.myTextBox2.Name = "myTextBox2";
             this.myTextBox2.Size = new System.Drawing.Size(100, 22);
             this.myTextBox2.TabIndex = 1;
             // 
+            // myTextBox3
+            // 
+            this.myTextBox3.Location = new System.Drawing.Point(150, 279);
+            this.myTextBox3.MenorValor = 0;
+            this.myTextBox3.Name = "myTextBox3";
+            this.myTextBox3.Size = new System.Drawing.Size(100, 22);
+            this.myTextBox3.TabIndex = 2;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(278, 244);
+            this.ClientSize = new System.Drawing.Size(531, 425);
+            this.Controls.Add(this.myTextBox3);
             this.Controls.Add(this.myTextBox2);
             this.Controls.Add(this.myTextBox1);
             this.Name = "Form1";
@@ -66,6 +76,7 @@
 
         private MyTextBox.MyTextBox myTextBox1;
         private MyTextBox.MyTextBox myTextBox2;
+        private MyTextBox.MyTextBox myTextBox3;
     }
 }
 
