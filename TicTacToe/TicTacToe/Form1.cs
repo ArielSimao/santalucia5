@@ -65,7 +65,109 @@ namespace TicTacToe
 
         private void verificarVencedor()
         {
-            
+            if (bt1.Text == "X" && bt2.Text == "X" && bt3.Text == "X")
+            {
+                MessageBox.Show("X Ganhou");
+                btNovo_Click(null, null);
+                return;
+            }
+            if (bt4.Text == "X" && bt5.Text == "X" && bt6.Text == "X")
+            {
+                MessageBox.Show("X Ganhou");
+                btNovo_Click(null, null);
+                return;
+            }
+            if (bt7.Text == "X" && bt8.Text == "X" && bt9.Text == "X")
+            {
+                MessageBox.Show("X Ganhou");
+                btNovo_Click(null, null);
+                return;
+            }
+            if (bt1.Text == "X" && bt4.Text == "X" && bt7.Text == "X")
+            {
+                MessageBox.Show("X Ganhou");
+                btNovo_Click(null, null);
+                return;
+            }
+            if (bt2.Text == "X" && bt5.Text == "X" && bt8.Text == "X")
+            {
+                MessageBox.Show("X Ganhou");
+                btNovo_Click(null, null);
+                return;
+            }
+            if (bt3.Text == "X" && bt6.Text == "X" && bt9.Text == "X")
+            {
+                MessageBox.Show("X Ganhou");
+                btNovo_Click(null, null);
+                return;
+            }
+            if (bt1.Text == "X" && bt5.Text == "X" && bt9.Text == "X")
+            {
+                MessageBox.Show("X Ganhou");
+                btNovo_Click(null, null);
+                return;
+            }
+            if (bt3.Text == "X" && bt5.Text == "X" && bt7.Text == "X")
+            {
+                MessageBox.Show("X Ganhou");
+                btNovo_Click(null, null);
+                return;
+            }
+
+            /////Jogador 0
+            if (bt1.Text == "0" && bt2.Text == "0" && bt3.Text == "0")
+            {
+                MessageBox.Show("0 Ganhou");
+                btNovo_Click(null, null);
+                return;
+            }
+            if (bt4.Text == "0" && bt5.Text == "0" && bt6.Text == "0")
+            {
+                MessageBox.Show("0 Ganhou");
+                btNovo_Click(null, null);
+                return;
+            }
+            if (bt7.Text == "0" && bt8.Text == "0" && bt9.Text == "0")
+            {
+                MessageBox.Show("0 Ganhou");
+                btNovo_Click(null, null);
+                return;
+            }
+            if (bt1.Text == "0" && bt4.Text == "0" && bt7.Text == "0")
+            {
+                MessageBox.Show("0 Ganhou");
+                btNovo_Click(null, null);
+                return;
+            }
+            if (bt2.Text == "0" && bt5.Text == "0" && bt8.Text == "0")
+            {
+                MessageBox.Show("0 Ganhou");
+                btNovo_Click(null, null);
+                return;
+            }
+            if (bt3.Text == "0" && bt6.Text == "0" && bt9.Text == "0")
+            {
+                MessageBox.Show("0 Ganhou");
+                btNovo_Click(null, null);
+                return;
+            }
+            if (bt1.Text == "0" && bt5.Text == "0" && bt9.Text == "0")
+            {
+                MessageBox.Show("0 Ganhou");
+                btNovo_Click(null, null);
+                return;
+            }
+            if (bt3.Text == "0" && bt5.Text == "0" && bt7.Text == "0")
+            {
+                MessageBox.Show("0 Ganhou");
+                btNovo_Click(null, null);
+                return;
+            }
+            if (vez == 9) {
+                MessageBox.Show("Empate");
+                btNovo_Click(null, null);
+                return;
+            }
         }
     }
 }
