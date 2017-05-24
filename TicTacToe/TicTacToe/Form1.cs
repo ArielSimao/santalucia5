@@ -14,6 +14,8 @@ namespace TicTacToe
     public partial class Form1 : MetroFramework.Forms.MetroForm
     {
         public int vez = 0;
+        public int vencedorX = 0;
+        public int vencedor0 = 0;
 
         public Form1()
         {
@@ -39,6 +41,7 @@ namespace TicTacToe
         private void btNovo_Click(object sender, EventArgs e)
         {
             limparBotoes();
+            vez = 0;
         }
 
         private void bt1_Click(object sender, EventArgs e)
@@ -65,109 +68,81 @@ namespace TicTacToe
 
         private void verificarVencedor()
         {
-            if (bt1.Text == "X" && bt2.Text == "X" && bt3.Text == "X")
+            String vlr = "";
+
+            for (int i = 0; i < 2; i++)
             {
-                MessageBox.Show("X Ganhou");
-                btNovo_Click(null, null);
-                return;
-            }
-            if (bt4.Text == "X" && bt5.Text == "X" && bt6.Text == "X")
-            {
-                MessageBox.Show("X Ganhou");
-                btNovo_Click(null, null);
-                return;
-            }
-            if (bt7.Text == "X" && bt8.Text == "X" && bt9.Text == "X")
-            {
-                MessageBox.Show("X Ganhou");
-                btNovo_Click(null, null);
-                return;
-            }
-            if (bt1.Text == "X" && bt4.Text == "X" && bt7.Text == "X")
-            {
-                MessageBox.Show("X Ganhou");
-                btNovo_Click(null, null);
-                return;
-            }
-            if (bt2.Text == "X" && bt5.Text == "X" && bt8.Text == "X")
-            {
-                MessageBox.Show("X Ganhou");
-                btNovo_Click(null, null);
-                return;
-            }
-            if (bt3.Text == "X" && bt6.Text == "X" && bt9.Text == "X")
-            {
-                MessageBox.Show("X Ganhou");
-                btNovo_Click(null, null);
-                return;
-            }
-            if (bt1.Text == "X" && bt5.Text == "X" && bt9.Text == "X")
-            {
-                MessageBox.Show("X Ganhou");
-                btNovo_Click(null, null);
-                return;
-            }
-            if (bt3.Text == "X" && bt5.Text == "X" && bt7.Text == "X")
-            {
-                MessageBox.Show("X Ganhou");
-                btNovo_Click(null, null);
-                return;
+                if (i == 0)
+                {
+                    vlr = "X";
+                }
+                else
+                {
+                    vlr = "0";
+                }
+                if (bt1.Text == vlr && bt2.Text == vlr && bt3.Text == vlr)
+                {
+                    mensagem("Jogador " + vlr + " Venceu");
+
+                }
+                if (bt4.Text == vlr && bt5.Text == vlr && bt6.Text == vlr)
+                {
+                    mensagem("Jogador " + vlr + " Venceu");
+                }
+                if (bt7.Text == vlr && bt8.Text == vlr && bt9.Text == vlr)
+                {
+                    mensagem("Jogador " + vlr + " Venceu");
+                }
+                if (bt1.Text == vlr && bt4.Text == vlr && bt7.Text == vlr)
+                {
+                    mensagem("Jogador " + vlr + " Venceu");
+                }
+                if (bt2.Text == vlr && bt5.Text == vlr && bt8.Text == vlr)
+                {
+                    mensagem("Jogador " + vlr + " Venceu");
+                }
+                if (bt3.Text == vlr && bt6.Text == vlr && bt9.Text == vlr)
+                {
+                    mensagem("Jogador " + vlr + " Venceu");
+                }
+                if (bt1.Text == vlr && bt5.Text == vlr && bt9.Text == vlr)
+                {
+                    mensagem("Jogador " + vlr + " Venceu");
+                }
+                if (bt3.Text == vlr && bt5.Text == vlr && bt7.Text == vlr)
+                {
+                    mensagem("Jogador " + vlr + " Venceu");
+                }
+
+
+                if (vez == 9)
+                {
+                    MessageBox.Show("Empate");
+                    btNovo_Click(null, null);
+                    return;
+                }
+
+
             }
 
-            /////Jogador 0
-            if (bt1.Text == "0" && bt2.Text == "0" && bt3.Text == "0")
+        }
+
+        private void mensagem(string v)
+        {
+            String r = v.Substring(8, 1);
+            if (r == "X")
             {
-                MessageBox.Show("0 Ganhou");
-                btNovo_Click(null, null);
-                return;
+                vencedorX++;
+                metroLabel1.Text = "Jogador X Total: " + vencedorX;
             }
-            if (bt4.Text == "0" && bt5.Text == "0" && bt6.Text == "0")
+            else
             {
-                MessageBox.Show("0 Ganhou");
-                btNovo_Click(null, null);
-                return;
+                vencedor0++;
+                metroLabel2.Text = "Jogador 0 Total: " + vencedor0;
             }
-            if (bt7.Text == "0" && bt8.Text == "0" && bt9.Text == "0")
-            {
-                MessageBox.Show("0 Ganhou");
-                btNovo_Click(null, null);
-                return;
-            }
-            if (bt1.Text == "0" && bt4.Text == "0" && bt7.Text == "0")
-            {
-                MessageBox.Show("0 Ganhou");
-                btNovo_Click(null, null);
-                return;
-            }
-            if (bt2.Text == "0" && bt5.Text == "0" && bt8.Text == "0")
-            {
-                MessageBox.Show("0 Ganhou");
-                btNovo_Click(null, null);
-                return;
-            }
-            if (bt3.Text == "0" && bt6.Text == "0" && bt9.Text == "0")
-            {
-                MessageBox.Show("0 Ganhou");
-                btNovo_Click(null, null);
-                return;
-            }
-            if (bt1.Text == "0" && bt5.Text == "0" && bt9.Text == "0")
-            {
-                MessageBox.Show("0 Ganhou");
-                btNovo_Click(null, null);
-                return;
-            }
-            if (bt3.Text == "0" && bt5.Text == "0" && bt7.Text == "0")
-            {
-                MessageBox.Show("0 Ganhou");
-                btNovo_Click(null, null);
-                return;
-            }
-            if (vez == 9) {
-                MessageBox.Show("Empate");
-                btNovo_Click(null, null);
-                return;
-            }
+            MessageBox.Show(v);
+            btNovo_Click(null, null);
+            return;
         }
     }
 }

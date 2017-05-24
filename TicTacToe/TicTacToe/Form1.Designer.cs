@@ -38,6 +38,8 @@
             this.bt8 = new MetroFramework.Controls.MetroButton();
             this.bt7 = new MetroFramework.Controls.MetroButton();
             this.btNovo = new MetroFramework.Controls.MetroButton();
+            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.SuspendLayout();
             // 
             // bt1
@@ -47,7 +49,6 @@
             this.bt1.Name = "bt1";
             this.bt1.Size = new System.Drawing.Size(80, 80);
             this.bt1.TabIndex = 0;
-            this.bt1.Text = "X";
             this.bt1.UseSelectable = true;
             this.bt1.Click += new System.EventHandler(this.bt1_Click);
             // 
@@ -108,7 +109,6 @@
             this.bt9.Name = "bt9";
             this.bt9.Size = new System.Drawing.Size(80, 80);
             this.bt9.TabIndex = 8;
-            this.bt9.Text = "0";
             this.bt9.UseSelectable = true;
             this.bt9.Click += new System.EventHandler(this.bt1_Click);
             // 
@@ -143,11 +143,30 @@
             this.btNovo.UseSelectable = true;
             this.btNovo.Click += new System.EventHandler(this.btNovo_Click);
             // 
+            // metroLabel1
+            // 
+            this.metroLabel1.AutoSize = true;
+            this.metroLabel1.ForeColor = System.Drawing.SystemColors.Control;
+            this.metroLabel1.Location = new System.Drawing.Point(41, 481);
+            this.metroLabel1.Name = "metroLabel1";
+            this.metroLabel1.Size = new System.Drawing.Size(0, 0);
+            this.metroLabel1.TabIndex = 10;
+            // 
+            // metroLabel2
+            // 
+            this.metroLabel2.AutoSize = true;
+            this.metroLabel2.Location = new System.Drawing.Point(41, 505);
+            this.metroLabel2.Name = "metroLabel2";
+            this.metroLabel2.Size = new System.Drawing.Size(0, 0);
+            this.metroLabel2.TabIndex = 11;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(386, 478);
+            this.ClientSize = new System.Drawing.Size(386, 545);
+            this.Controls.Add(this.metroLabel2);
+            this.Controls.Add(this.metroLabel1);
             this.Controls.Add(this.btNovo);
             this.Controls.Add(this.bt9);
             this.Controls.Add(this.bt8);
@@ -163,6 +182,7 @@
             this.Text = "Jogo da Velha";
             this.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -178,6 +198,8 @@
         private MetroFramework.Controls.MetroButton bt8;
         private MetroFramework.Controls.MetroButton bt7;
         private MetroFramework.Controls.MetroButton btNovo;
+        private MetroFramework.Controls.MetroLabel metroLabel1;
+        private MetroFramework.Controls.MetroLabel metroLabel2;
     }
 }
 

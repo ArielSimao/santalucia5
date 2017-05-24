@@ -28,6 +28,7 @@ namespace Biblioteca.View
             }
             var telaLivros = new frmLivros();
             telaLivros.MdiParent = this;
+            telaLivros.Theme = MetroFramework.MetroThemeStyle.Dark;
             telaLivros.StartPosition = FormStartPosition.CenterScreen;
             telaLivros.Show();
         }

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="PrjSuporteCorrecao.Suporte">
+    <Position X="0.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAEAAAAAAAAAAABAAAAAAAAAAAAQAAAAAAAAgA=</HashCode>
+      <FileName>Suporte.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Grau" />
+    </ShowAsAssociation>
+  </Class>
+  <Enum Name="PrjSuporteCorrecao.GrauSatisfacao">
+    <Position X="3.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAAAAAgAAAAAABBAgAAAAAAAAAAA=</HashCode>
+      <FileName>GrauSatisfacao.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

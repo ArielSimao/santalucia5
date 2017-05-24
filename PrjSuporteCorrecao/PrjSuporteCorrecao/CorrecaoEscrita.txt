@@ -1,0 +1,41 @@
+﻿1) Sobre a figura.
+
+A) Do que se trata a Classe Pessoa em termos de Orientação a Objetos
+Classe abstrata que serve de base para suas subclasses, neste caso, apenas serve de 
+base para a classe Funcionario.
+
+B) Do que se trata a Classe Funcionario em termos de Orientação a Objetos
+Trata-se de uma subclasse da classe Pessoa. Diz-se que a classe Funcionario estende
+as propriedades e comportamentos da super classe Pessoa.
+
+C) Do que se trata o atributo Cargo definido na Classe Funcionário.
+É um campo agregado (agregação)
+
+
+2) Conceitos explicados
+A) Classe Abstrata e Classe Concreta
+Classe Abstrata serve de base para suas subclasse, é uma classe que não pode ser
+instanciada, ao contrário da Classe concreta, da qual se pode obter objetos, com
+características próprias e herdadas de superclasses.
+
+B) Sobrescrita e Sobrecarga
+Sobrescrita é a reescrita de um método definido da superclasse redefinido na subclasse,
+possui a mesma assinatura.
+Sobrecarga métodos com o mesmo nome mas assinaturas diferentes definidos na mesma classe.
+
+C)Generalização e Especialização
+Característica principal da herança.
+Generealização: classe mais geral (serve de base a outras)
+Especialização: classe(s) que estendem funcionalidades e características de classes
+generalistas.
+
+D)Encapsulamento e modificadores de acesso
+Processo de esconder atributos ou métodos de acessos externos a classe.
+Os métodos modificadores são aqueles usados para permitir acesso a um método ou campo
+definido inicialmente com um nivel de proteção.
+
+E) Estruturas e Tipos enumerados
+Estruturas: representam um tipo de dado, quando usado o dado é alocado na pilha 
+e não na área de montagem. (primitivo).
+Enumeradores: usados para definir um campo fortemente tipado, na prática um conjunto
+de constantes. EX: sexo (masculino, feminino).
